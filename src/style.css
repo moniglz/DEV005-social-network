@@ -36,6 +36,14 @@ textarea {
 
 /* MOBILE FIRST */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+  main {
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-image: url('./images/huellitas-claras.png');
+    background-repeat: repeat-y;
+  }
 
   /*------ HOME/LOGIN ------*/
   .container {
@@ -293,8 +301,6 @@ textarea {
   #root {
     height: auto;
     width: 390px;
-    height: auto;
-    width: 390px;
   }
 
   #wall-section {
@@ -531,6 +537,7 @@ textarea {
     height: 28%;
     width: 50%;
   }
+}
 
   /* TABLET */
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
