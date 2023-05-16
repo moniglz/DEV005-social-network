@@ -47,7 +47,7 @@ function wall() {
   backToTopBtn.id = 'back-to-top';
   const backToTop = document.createElement('img');
   backToTop.id = 'back-to-top-img';
-  backToTop.src = './images/top-svgrepo-com.svg';
+  backToTop.src = './assets/top-svgrepo-com.svg';
   backToTop.alt = 'arrow up';
   // Funcionalidad del botón backToTop
   backToTopBtn.append(backToTop);
@@ -172,7 +172,7 @@ function wall() {
       // Ícono de corazón
       const heartIcon = document.createElement('div');
       heartIcon.id = 'heart-icon';
-      heartIcon.src = './images/heart-svgrepo-com.svg';
+      heartIcon.src = './assets/heart-svgrepo-com.svg';
       heartIcon.alt = 'heart icon';
       likesCounter.append(heartIcon);
       // Creación botón Like
