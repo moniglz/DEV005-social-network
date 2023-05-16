@@ -685,52 +685,61 @@ textarea {
     position: fixed;
   }
 
-  /*------ REGISTER ------*/
-  .title-reg-kitty{
-    margin-top: 1.21em;
-    margin-bottom: .1em;
-    font-family: var(--font-logo);
-    font-size: 7.3em;
-    font-weight: 400;
-    color: #4a4747;
-    text-align: center;
-  }
-  .title-registrate {
-    margin-top: .3em;
-    margin-bottom: .1em;
-    font-family: var(--font-text);
-    font-size: 3.6em;
-    font-weight: 600;
-    color: #000000;
-    text-align: center;
-  }
-  .signup-container {
-    background-color: #8C7851;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 441px;
-    height: 441px;
-    border-radius: 15px;
-    flex-wrap: nowrap;
-    margin-top: 32px;
-  }
-  .signup-container input {
-    height: 42px;
-    width: 326px;
-    border-radius: 12px;
-    border: solid 1px #ffc1c1;
-    font-family: var(--font-text);
-    font-size: 2em;
-    font-weight: 400;
-  }
-  .signup-container #send-info {
-    color: #ffffff;
-    background-color: #d35c46;
-    border: 1px solid white;
-    font-size: 22px;
-  }
+    /*------ REGISTER ------*/
+    .title-reg-kitty {
+      margin-top: 1.21em;
+      margin-bottom: .1em;
+      font-family: var(--font-logo);
+      font-size: 7.3em;
+      font-weight: 400;
+      color: #4a4747;
+      text-align: center;
+    }
+
+    .title-registrate {
+      margin-top: 1em;
+      margin-bottom: .1em;
+      font-family: var(--font-text);
+      font-size: 3.6em;
+      font-weight: 600;
+      color: #000000;
+      text-align: center;
+      background-color: #f9f4ef;
+      border-radius: 10px;
+    }
+
+    .signup-container {
+      background-color: #8C7851;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 441px;
+      height: 441px;
+      border-radius: 15px;
+      flex-wrap: nowrap;
+      margin-top: 6em;
+    }
+
+    #google-icon, #github-icon{
+    margin-right: 10px;
+    } 
+    .signup-container input {
+      height: 42px;
+      width: 326px;
+      border-radius: 12px;
+      border: solid 1px #ffc1c1;
+      font-family: var(--font-text);
+      font-size: 2em;
+      font-weight: 400;
+    }
+
+    .signup-container #send-info {
+      color: #ffffff;
+      background-color: #d35c46;
+      border: 1px solid white;
+      font-size: 22px;
+    }
 
   .signup-container button {
     height: 54px;
@@ -740,14 +749,28 @@ textarea {
     font-weight: 600px;
   }
 
+  .signup-container #google-reg,#github-reg {
+    font-family: var(--font-text);
+    font-size: 19px;
+    font-weight: 500;
+    color: black;
+    background-color: #ffffff;
+    border: 1.46473px solid #FFC1C1;
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
   .register-background {
     background-image: url("images/74A43094-23A5-403C-B736-5B587E12F994.png");
     height: 100vh;
     width: 100vw;
-    background-size: 76%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    background-position-x: 110%;
-    background-position-y: 165%;
+    background-position-x: 99%;
+    background-position-y: 149%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -814,17 +837,20 @@ textarea {
     text-align: center;
   }
 
-  /*------ WALL ------*/
-  #wall-section {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100vw;
-    align-items: center;
-    background-image: url('./images/huellitas-claras.png');
+  #info-text-reg{
+    display: none;
+  }
+    /*------ WALL ------*/
+    #wall-section {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      width: 100vw;
+      align-items: center;
+      background-image: url('./images/huellitas-claras.png');
     background-repeat: repeat;
     position: absolute;
-  }
+    }
 
   #nav-bar {
     display: flex;
@@ -1083,16 +1109,16 @@ textarea {
     }
 
     #info-cont {
-      display: flex;
-      height: 19rem;
-      width: 37rem;
-      margin-left: 4rem;
-      margin-bottom: .5rem;
-      background-color: #f250424d;
-      padding: 1.4rem;
-      border-radius: 20px;
-      align-items: center;
-      position: relative;
+        display: flex;
+        height: 19rem;
+        width: 37rem;
+        margin-left: 4rem;
+        margin-bottom: .5rem;
+        background-color: #f250424d;
+        padding: 1.4rem;
+        border-radius: 20px;
+        align-items: center;
+        position: relative;
     }
 
     #info-text {
@@ -1369,29 +1395,30 @@ textarea {
     justify-self: auto;
   }
 
-  #footer-reg {
-    display: flex;
-    height: 4.5%;
-    width: 100vw;
-    margin: 0;
-    position: fixed;
-    bottom: 0;
-    font-family: var(--font-text);
-    font-size: 1.5rem;
-    font-weight: 900;
-    justify-content: center;
-    align-items: center;
-    color: #4a4747;
-    background-color: #eaddcf;
-  }
-
+#footer-reg {
+  display: flex;
+  height: 4.5%;
+  width: 100vw;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  font-family: var(--font-text);
+  font-size: 1.5rem;
+  font-weight: 900;
+  justify-content: center;
+  align-items: center;
+  color: #4a4747;
+  background-color: #eaddcf;
+}
 /*------ WALL ------*/
 #wall-section {
   display: flex;
   height: 100%;
-  width: 100%;
-  background-image: url('./images/huellitas-claras.png');
-  background-repeat: repeat;
+  width: 100vw;
+  background-image: url(./images/huellitas-claras.png);
+  background-size: 50%;
+  background-repeat: repeat-y;
+  background-position: right 150%;
 }
 
     #nav-bar {

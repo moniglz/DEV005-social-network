@@ -1,12 +1,8 @@
-/* eslint-disable max-len */
-/* eslint-disable import/no-extraneous-dependencies */
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
-import { signOut, updateCurrentUser } from 'firebase/auth';
-import { arrayUnion } from 'firebase/firestore';
-import { auth, db } from '../lib/firebase';
+import { signOut } from 'firebase/auth';
+import { auth } from '../lib/firebase';
 import {
-  addPostToFirestore, deletePostFromFirestore, likePost, q, onSnapshot, dislikePost, updatePostFirestore,
+  addPostToFirestore, deletePostFromFirestore, likePost, q,
+  onSnapshot, dislikePost, updatePostFirestore,
 } from '../lib/post';
 
 function wall() {
@@ -99,7 +95,6 @@ function wall() {
 
   btnLogOut.addEventListener('click', () => {
     signOut(auth);
-    console.log('Se cerró sesión correctamente');
   });
 
   // Función para traer los posts de Firestore en tiempo real
@@ -110,7 +105,6 @@ function wall() {
 
     querySnapshot.forEach((doc) => {
       const newPostCont = document.createElement('section');
-      console.log('Current posts:', doc.id, doc.data().text, doc.data().user, doc.data().likes);
       newPostCont.classList = 'cont-posted';
       const newPostAuthor = document.createElement('div');
       newPostAuthor.className = 'posted-author';
@@ -135,13 +129,11 @@ function wall() {
 
         // Manejo modal eliminar
         btnDelete.addEventListener('click', () => {
-          console.log('Deleting post with ID:', doc.id);
           modal.style.display = 'block';
           const postIdToDelete = doc.id;
 
           // Confirmar eliminación
           btnConfirmDelete.onclick = () => {
-            console.log(postIdToDelete);
             deletePostFromFirestore(postIdToDelete);
             newPostCont.remove();
             modal.style.display = 'none';
@@ -154,6 +146,7 @@ function wall() {
         btnEdit.textContent = 'Editar';
 
         btnEdit.addEventListener('click', () => {
+          // eslint-disable-next-line no-console
           console.log('Editing post with ID:', doc.id);
           if (newPost.readOnly) {
             newPost.readOnly = false;
