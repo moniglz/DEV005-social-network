@@ -173,7 +173,6 @@ function wall() {
       const heartIcon = document.createElement('img');
       heartIcon.id = 'heart-icon';
       heartIcon.src = './images/heart-svgrepo-com.svg';
-      heartIcon.src = './images/heart-svgrepo-com.svg';
       heartIcon.alt = 'heart icon';
       likesCounter.append(heartIcon);
       // Creación botón Like
