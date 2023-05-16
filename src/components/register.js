@@ -32,7 +32,7 @@ function register(navigateTo) {
   btnRegWithGoogle.id = 'google-reg';
   const signUpGoogleIcon = document.createElement('img');
   signUpGoogleIcon.id = 'google-icon';
-  signUpGoogleIcon.src = '/images/icon-google.png';
+  signUpGoogleIcon.src = './images/icon-google.png';
   signUpGoogleIcon.alt = 'google icon';
 
   // Creación botón Registrar con GitHub
@@ -41,7 +41,7 @@ function register(navigateTo) {
   btnRegWithGithub.id = 'github-reg';
   const signUpGithubIcon = document.createElement('img');
   signUpGithubIcon.id = 'github-icon';
-  signUpGithubIcon.src = '/images/icon-github.png';
+  signUpGithubIcon.src = './images/icon-github.png';
   signUpGithubIcon.alt = 'github icon';
 
   // Texto de error al registrar
