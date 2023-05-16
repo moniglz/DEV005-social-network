@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable max-len */
 /* eslint-disable no-console */
 import {
-  collection, addDoc, doc, deleteDoc, updateDoc, arrayUnion, arrayRemove, query, onSnapshot, serverTimestamp, orderBy,
+  collection, addDoc, doc, deleteDoc, updateDoc, arrayUnion,
+  arrayRemove, query, onSnapshot, serverTimestamp, orderBy,
 } from 'firebase/firestore';
 import {
   auth, db,
@@ -11,7 +10,8 @@ import {
 // Función para añadir un post a Firestore
 export const addPostToFirestore = async (text, user) => {
   const userIn = auth.currentUser;
-  console.log('se añade');
+  // eslint-disable-next-line no-console
+  console.log(user);
   try {
     const docRef = await addDoc(collection(db, 'posts'), {
       text,

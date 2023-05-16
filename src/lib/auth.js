@@ -1,23 +1,14 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
-
+/* eslint-disable no-unused-vars */
 import {
   createUserWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
   GithubAuthProvider,
   signInWithEmailAndPassword,
-  signOut,
 } from 'firebase/auth';
 
 import {
-  getFirestore,
-  collection,
-  addDoc,
-} from 'firebase/firestore';
-
-import {
-  db,
   auth,
 } from './firebase';
 
@@ -36,7 +27,8 @@ export const newAccount = (email, password, errorElement) => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        // You can do something here after a successful account creation
+        // eslint-disable-next-line no-console
+        console.log(user);
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -87,11 +79,9 @@ export const accessWithGoogle = (navigateTo) => {
   signInWithPopup(auth, provider)
     .then((result) => {
       const credential = GoogleAuthProvider.credentialFromResult(result);
-      const token = credential.accessToken;
-      const user = result.user;
-      console.log('signed up with Google');
+      // eslint-disable-next-line no-console
+      console.log(credential);
       navigateTo('/wall');
-      // ...
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -121,6 +111,5 @@ export const accessWithGithub = (navigateTo) => {
       const email = error.email;
       const credential = GithubAuthProvider.credentialFromError(error);
       console.log('error signing up with Github');
-      // ...
     });
 };

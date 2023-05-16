@@ -1,5 +1,3 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-console */
 import { accessWithGithub, logInWithEmail, accessWithGoogle } from '../lib/auth';
 
 // Creación sección Iniciar sesión
@@ -83,6 +81,7 @@ function home(navigateTo) {
         navigateTo('/wall');
       })
       .catch((error) => {
+        // eslint-disable-next-line no-console
         console.log(error);
       });
   });
