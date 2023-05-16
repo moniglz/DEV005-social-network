@@ -173,7 +173,6 @@ textarea {
   }
 
   /*------ REGISTER ACCOUNT ------*/
-
   .signup-container input {
     height: 10%;
     width: 80%;
@@ -196,7 +195,10 @@ textarea {
     background-size: auto 73%;
     background-position: center 117%;
   }
-
+  #info-text-reg{
+    display: none;
+  }
+  
   #title {
     margin-top: 0.5em;
     margin-bottom: -0.2em;
@@ -242,6 +244,13 @@ textarea {
     color: #000000;
   }
 
+  #google-reg img {
+    height: 1.85em;
+    width: 1.85em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
   #github-reg {
     display: flex;
     flex-direction: row-reverse;
@@ -254,6 +263,13 @@ textarea {
     background-color: #ffffff;
     color: #000000;
 
+  }
+
+  #github-reg img {
+    height: 1.85em;
+    width: 1.85em;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   #container {
@@ -285,7 +301,6 @@ textarea {
   }
 
   /*------ WALL ------*/
-
   #root {
     height: auto;
     width: 390px;
@@ -297,6 +312,8 @@ textarea {
     height: 100%;
     width: 100%;
     align-items: center;
+    background-image: url('./images/huellitas-claras.png');
+    background-repeat: repeat-y;
   }
 
   #nav-bar {
@@ -389,7 +406,6 @@ textarea {
     align-items: center;
   }
   
-
   .cont-posted {
     height: 100vh;
     width: 92vw;
@@ -526,7 +542,6 @@ textarea {
     width: 50%;
   }
 }
-
 
   /* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -760,6 +775,50 @@ textarea {
     align-items: center;
     flex-direction: column;
   }
+  #google-reg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 3em;
+    width: 33rem;
+    padding: 0.4rem;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.8rem;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+    #google-reg img {
+      height: 1.85em;
+      width: 1.85em;
+      margin-right: 2rem;
+    }
+
+  #github-reg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 3em;
+    width: 33rem;
+    padding: 0.4rem;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.8rem;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+    #github-reg img {
+      height: 1.85em;
+      width: 1.85em;
+      margin-right: 2rem;
+    }
+
   #return{
     margin-top: 43px;
     width: 260px;
@@ -1162,6 +1221,7 @@ textarea {
       box-shadow: 1px 1px 4px #6e6e6e42;
       border: none;
     }
+
   #error-login {
     margin: 0 20px 5px;
     font-size: 1.35em;
@@ -1169,6 +1229,7 @@ textarea {
     text-align: center;
     color: #fbff16;
   }
+
   footer {
     display: flex;
     height: 4.5%;
@@ -1417,6 +1478,7 @@ textarea {
     margin-top: 40px;
     left: 10px;
   }
+
     #text-posts {
       height: 7em;
       width: 28em;
@@ -1427,8 +1489,8 @@ textarea {
       border: solid 1px #c5c5c5;
       border-radius: 1.4rem;
       background-color: #ffffff;
-
     }
+
       #send-post {
         font-size: 1.4rem;
         width: 6em;
@@ -1436,6 +1498,7 @@ textarea {
         margin-top: 2.7em;
         margin-left: 19em;
       }
+
         #send-post:disabled {
           color: #7e7979;
           background-color: #f1c7bf;
@@ -1450,6 +1513,7 @@ textarea {
       flex-direction: column;
       align-items: flex-start;
     }
+
       .posted {
         display: flex;
         min-height: 7em;
@@ -1461,6 +1525,7 @@ textarea {
         border-radius: 12px 12px 0 0;
         justify-content: space-between;
       }
+
         #btn-delete {
           height: 3.5rem;
           width: 100px;
@@ -1529,6 +1594,7 @@ textarea {
       font-size: 1.5rem;
       margin-bottom: 4px;
     }
+
   .posted-btns{
     display: flex;
     flex-direction: column;
@@ -1540,6 +1606,7 @@ textarea {
     position: absolute;
     margin-top: 38px;
   }
+
   .posted-author{
   font-family: var(--font-text);
   color: #A94A38;
@@ -1549,6 +1616,7 @@ textarea {
   padding:2px;
   position: relative;
   }
+
   #back-to-top {
     position: fixed;
     bottom: 20px;
@@ -1560,6 +1628,7 @@ textarea {
     justify-content: center;
     align-items: center;
   }
+
   #btn-like {
     width: 402px;
     font-size: 1.5rem;
