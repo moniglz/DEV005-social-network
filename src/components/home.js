@@ -35,19 +35,19 @@ function home(navigateTo) {
   googleLogIn.id = 'google-login';
   googleLogIn.className = 'provider';
   googleLogIn.textContent = 'Inicia sesión con Google';
-  const iconGoogle = document.createElement('img');
-  iconGoogle.id = 'icon-google';
-  iconGoogle.src = './images/icon-google.png';
-  iconGoogle.alt = 'icon-google';
+  // const iconGoogle = document.createElement('img');
+  // iconGoogle.id = 'icon-google';
+  // iconGoogle.src = './images/icon-google.png';
+  // iconGoogle.alt = 'icon-google';
 
   // Creación botón Iniciar sesión con GitHub
   const ghLogIn = document.createElement('button');
   ghLogIn.id = 'gh-login';
   ghLogIn.className = 'provider';
-  const iconGH = document.createElement('img');
-  iconGH.id = 'icon-gh';
-  iconGH.src = './images/icon-github.png';
-  iconGH.alt = 'icon-GitHub';
+  // const iconGH = document.createElement('img');
+  // iconGH.id = 'icon-gh';
+  // iconGH.src = './images/icon-github.png';
+  // iconGH.alt = 'icon-GitHub';
   ghLogIn.textContent = 'Inicia sesión con GitHub';
 
   // Creación sección Registrarme
@@ -115,8 +115,8 @@ function home(navigateTo) {
   );
 
   infoCont.append(infoTxt);
-  googleLogIn.append(iconGoogle);
-  ghLogIn.append(iconGH);
+  // googleLogIn.append(iconGoogle);
+  // ghLogIn.append(iconGH);
   regist.append(btnRegister);
   return sectionHome;
 }
