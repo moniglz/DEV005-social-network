@@ -436,6 +436,11 @@ textarea {
     border-radius: 0.7rem;
   }
 
+  .likes-counter {
+    background-image: url('./images/heart-svgrepo-com.svg');
+    background-size: contain;
+  }
+
   #btns-cont {
     display: flex;
     flex-direction: row;
@@ -1193,7 +1198,7 @@ textarea {
       color: #000000;
     }
 
-    .provider img {
+    .provider-gg img {
       height: 1.62em;
       width: 1.62em;
       margin-right: auto;
