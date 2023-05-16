@@ -37,7 +37,7 @@ function home(navigateTo) {
   googleLogIn.textContent = 'Inicia sesión con Google';
   const iconGoogle = document.createElement('img');
   iconGoogle.id = 'icon-google';
-  iconGoogle.src = './icon-google.png';
+  iconGoogle.src = './dist/assets/icon-google.png';
   iconGoogle.alt = 'icon-google';
 
   // Creación botón Iniciar sesión con GitHub

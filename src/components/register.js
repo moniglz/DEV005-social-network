@@ -32,7 +32,7 @@ function register(navigateTo) {
   btnRegWithGoogle.id = 'google-reg';
   const signUpGoogleIcon = document.createElement('img');
   signUpGoogleIcon.id = 'google-icon';
-  signUpGoogleIcon.src = 'src/images/icon-google.png';
+  signUpGoogleIcon.src = './images/icon-google.png';
   signUpGoogleIcon.alt = 'google icon';
 
   // Creación botón Registrar con GitHub

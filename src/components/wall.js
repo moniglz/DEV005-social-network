@@ -170,9 +170,9 @@ function wall() {
       likesCounter.textContent = arrayLikes.length;
 
       // Ícono de corazón
-      const heartIcon = document.createElement('img');
+      const heartIcon = document.createElement('div');
       heartIcon.id = 'heart-icon';
-      heartIcon.src = '../images/heart-svgrepo-com.svg';
+      heartIcon.src = './images/heart-svgrepo-com.svg';
       heartIcon.alt = 'heart icon';
       likesCounter.append(heartIcon);
       // Creación botón Like
