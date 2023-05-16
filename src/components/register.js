@@ -41,7 +41,7 @@ function register(navigateTo) {
   btnRegWithGithub.id = 'github-reg';
   const signUpGithubIcon = document.createElement('img');
   signUpGithubIcon.id = 'github-icon';
-  signUpGithubIcon.src = './images/icon-github.png';
+  signUpGithubIcon.src = './im/icon-github.png';
   signUpGithubIcon.alt = 'github icon';
   // Texto de error al registrar
   const errorElement = document.createElement('h3');

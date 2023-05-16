@@ -170,11 +170,11 @@ function wall() {
       likesCounter.textContent = arrayLikes.length;
 
       // Ícono de corazón
-      const heartIcon = document.createElement('img');
-      heartIcon.id = 'heart-icon';
-      heartIcon.src = './images/heart-svgrepo-com.svg';
-      heartIcon.alt = 'heart icon';
-      likesCounter.append(heartIcon);
+      // const heartIcon = document.createElement('img');
+      // heartIcon.id = 'heart-icon';
+      // heartIcon.src = './images/heart-svgrepo-com.svg';
+      // heartIcon.alt = 'heart icon';
+      // likesCounter.append(heartIcon);
 
       // Creación botón Like
       const btnLike = document.createElement('button');
