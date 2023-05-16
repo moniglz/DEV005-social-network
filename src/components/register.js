@@ -1,7 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-console */
-/* eslint-disable no-alert */
-
 import { newAccount, accessWithGoogle, accessWithGithub } from '../lib/auth';
 
 // Creación sección registro
