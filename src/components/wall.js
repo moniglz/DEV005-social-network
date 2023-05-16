@@ -45,12 +45,8 @@ function wall() {
   // Creación botón Back to Top
   const backToTopBtn = document.createElement('button');
   backToTopBtn.id = 'back-to-top';
-  const backToTop = document.createElement('img');
-  backToTop.id = 'back-to-top-img';
-  backToTop.src = './images/top-svgrepo-com.svg';
-  backToTop.alt = 'arrow up';
+
   // Funcionalidad del botón backToTop
-  backToTopBtn.append(backToTop);
   backToTopBtn.addEventListener('click', () => {
     window.scrollTo({
       top: 0,
@@ -99,7 +95,7 @@ function wall() {
 
   // Función para traer los posts de Firestore en tiempo real
   onSnapshot(q, (querySnapshot) => {
-    // Clear postsContainer before adding new posts
+    // Limpiar container luego de crear un post nuevo
     postsContainer.innerHTML = '';
     const currentUserEmail = auth.currentUser.email;
 
@@ -168,13 +164,6 @@ function wall() {
       const likesCounter = document.createElement('div');
       likesCounter.classList.add('likes-counter');
       likesCounter.textContent = arrayLikes.length;
-
-      // Ícono de corazón
-      // const heartIcon = document.createElement('img');
-      // heartIcon.id = 'heart-icon';
-      // heartIcon.src = './images/heart-svgrepo-com.svg';
-      // heartIcon.alt = 'heart icon';
-      // likesCounter.append(heartIcon);
 
       // Creación botón Like
       const btnLike = document.createElement('button');
