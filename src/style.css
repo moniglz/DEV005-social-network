@@ -648,10 +648,11 @@ textarea {
     #login {
       font-size: 2.35em;
     }
-    .provider {
-      display: flex;
+    #gh-login {
+      font-size: 1.95em;
       flex-direction: row-reverse;
       padding: 2.5%;
+      padding-left: 10%;
       font-size: 1.95em;
       font-weight: 400;
       line-height: 1.15em;
@@ -660,12 +661,30 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
+      background-image: url('./images/icon-github.png');
+      background-repeat: no-repeat;
+      background-position-x: 25px;
+      background-position-y: center;
     }
-    .provider img {
-      height: 3.2rem;
-      width: 3.2rem;
-      margin: 0 2rem;
+    #google-login {
+      font-size: 1.95em;
+      flex-direction: row-reverse;
+      padding: 2.5%;
+      padding-left: 10%;
+      font-size: 1.95em;
+      font-weight: 400;
+      line-height: 1.15em;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px #ffc1c1;
+      background-color: #ffffff;
+      color: #000000;
+      background-image: url('./images/icon-google.png');
+      background-repeat: no-repeat;
+      background-position-x: 25px;
+      background-position-y: center;
     }
+
   #to-regist {
     display: grid;
     grid-template-rows: auto 100%;
@@ -798,49 +817,44 @@ textarea {
     align-items: center;
     flex-direction: column;
   }
-  #google-reg {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    height: 3em;
-    width: 33rem;
-    padding: 0.4rem;
-    font-size: 2em;
-    font-weight: 400;
-    line-height: 1.8rem;
-    align-items: center;
-    border: solid 1px #ffc1c1;
-    background-color: #ffffff;
-    color: #000000;
-  }
 
-    #google-reg img {
-      height: 1.85em;
-      width: 1.85em;
-      margin-right: 2rem;
+    #github-reg {
+      font-size: 1.95em;
+      flex-direction: row-reverse;
+      padding: 2.5%;
+      padding-left: 10%;
+      font-size: 1.95em;
+      font-weight: 400;
+      line-height: 1.15em;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px #ffc1c1;
+      background-color: #ffffff;
+      color: #000000;
+      background-image: url('./images/icon-github.png');
+      background-repeat: no-repeat;
+      background-position-x: 25px;
+      background-position-y: center;
     }
-
-  #github-reg {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    height: 3em;
-    width: 33rem;
-    padding: 0.4rem;
-    font-size: 2em;
-    font-weight: 400;
-    line-height: 1.8rem;
-    align-items: center;
-    border: solid 1px #ffc1c1;
-    background-color: #ffffff;
-    color: #000000;
-  }
-
-    #github-reg img {
-      height: 1.85em;
-      width: 1.85em;
-      margin-right: 2rem;
+    #google-reg {
+      font-size: 1.95em;
+      flex-direction: row-reverse;
+      padding: 2.5%;
+      padding-left: 10%;
+      font-size: 1.95em;
+      font-weight: 400;
+      line-height: 1.15em;
+      justify-content: center;
+      align-items: center;
+      border: solid 1px #ffc1c1;
+      background-color: #ffffff;
+      color: #000000;
+      background-image: url('./images/icon-google.png');
+      background-repeat: no-repeat;
+      background-position-x: 25px;
+      background-position-y: center;
     }
+    
 
   #return{
     margin-top: 43px;
@@ -1021,13 +1035,17 @@ textarea {
       font-family: var(--font-text);
       font-size: 1.8rem;
       font-weight: 500;
-      color: #ffffff;
+      color: #d35c46;
       background-color: #d35c46;
       border: none;
       border-radius: 0 0 1.5rem 1.5rem;
       text-align: center;
       align-items: center;
       justify-content: center;
+      background-image: url('./images/heart-svgrepo-com.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 30%;
     }
 
   .modal {
@@ -1084,6 +1102,9 @@ textarea {
       display: flex;
       justify-content: center;
       align-items: center;
+      background-image: url('./images/top-svgrepo-com.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     }
 
 
@@ -1588,8 +1609,9 @@ textarea {
       background-color: #fefefe;
       margin: 15% auto;
       padding: 20px;
-      border: 1px solid #888;
-      width: 50%;
+      border: #8C7851 solid 2px;
+      border-radius: 20px;
+      width: 30%;
       font-family: var(--font-text);
       font-size: medium;
       display: flex;
@@ -1677,5 +1699,13 @@ textarea {
     font-size: 1.5rem;
     margin-bottom: 4px;
     border-radius: 0 0 12px 12px;
+  }
+  #confirm-delete {
+    font-size: 1.5rem;
+    background-color: #8C7851;
+    margin-bottom: 4px;
+  }
+  #cancel-delete {
+    background-color: #8C7851;
   }
 }
