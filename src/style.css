@@ -483,7 +483,6 @@ textarea {
     width: 12rem;
     overflow: hidden;
     font-family: var(--font-text);
-    color: white;
     font-size: 1.7rem;
     font-weight: bold;
     background-color: #d35c46;
@@ -493,9 +492,6 @@ textarea {
     justify-content: center;
     align-items: center;
     color: #d35c46;
-    background-color: #d35c46;
-    border: 1px solid white;
-    border-radius: 0 0 12px 12px;
     background-image: url('./images/heart-svgrepo-com.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -515,7 +511,6 @@ textarea {
     border: none;
     border-radius: 0px 0px 13px 13px;
     background-color: #d35c46;
-    border: 1px solid white;
   }
 
   .modal {
@@ -653,7 +648,6 @@ textarea {
       flex-direction: row-reverse;
       padding: 2.5%;
       padding-left: 10%;
-      font-size: 1.95em;
       font-weight: 400;
       line-height: 1.15em;
       justify-content: center;
@@ -667,7 +661,6 @@ textarea {
       background-position-y: center;
     }
     #google-login {
-      font-size: 1.95em;
       flex-direction: row-reverse;
       padding: 2.5%;
       padding-left: 10%;
@@ -791,6 +784,24 @@ textarea {
     font-weight: 600px;
   }
 
+  #google-reg {
+    font-size: 1.95em;
+    flex-direction: row-reverse;
+    padding: 2.5%;
+    padding-left: 10%;
+    font-weight: 400;
+    line-height: 1.15em;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+    background-image: url('./images/icon-google.png');
+    background-repeat: no-repeat;
+    background-position-x: 25px;
+    background-position-y: center;
+  }
+  
   .signup-container #google-reg,#github-reg {
     font-family: var(--font-text);
     font-size: 19px;
@@ -823,7 +834,6 @@ textarea {
       flex-direction: row-reverse;
       padding: 2.5%;
       padding-left: 10%;
-      font-size: 1.95em;
       font-weight: 400;
       line-height: 1.15em;
       justify-content: center;
@@ -836,25 +846,6 @@ textarea {
       background-position-x: 25px;
       background-position-y: center;
     }
-    #google-reg {
-      font-size: 1.95em;
-      flex-direction: row-reverse;
-      padding: 2.5%;
-      padding-left: 10%;
-      font-size: 1.95em;
-      font-weight: 400;
-      line-height: 1.15em;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #ffc1c1;
-      background-color: #ffffff;
-      color: #000000;
-      background-image: url('./images/icon-google.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
-    }
-    
 
   #return{
     margin-top: 43px;
@@ -977,7 +968,6 @@ textarea {
       height: auto;
       width: 44rem;
       margin: 3em 0 3.5em;
-      height: auto;
     }
     .posted {
       display: flex;
