@@ -18,11 +18,11 @@ Los usuarios de KittyBook pueden registrarse con su correo, o bien ingresar con 
 
 #### Login
 
-![Mobile login](https://user-images.githubusercontent.com/110297/135544666-4efa54f1-4ff6-4c4c-b398-6df04ef56117.jpg)
+![Mobile login](https://res.cloudinary.com/dslzbcaxd/image/upload/v1684285979/IMG_3198_sqiesz.jpg)
 
 #### Registrarse
 
-![Mobile register](https://user-images.githubusercontent.com/110297/135544666-4efa54f1-4ff6-4c4c-b398-6df04ef56117.jpg)
+![Mobile register](https://res.cloudinary.com/dslzbcaxd/image/upload/v1684326410/IMG_3199_wwn4cg.jpg)
 
 #### Muro
 
