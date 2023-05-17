@@ -26,7 +26,7 @@ Los usuarios de KittyBook pueden registrarse con su correo, o bien ingresar con 
 
 #### Muro
 
-![Mobile wall](https://user-images.githubusercontent.com/110297/135544666-4efa54f1-4ff6-4c4c-b398-6df04ef56117.jpg)
+![Mobile wall](https://res.cloudinary.com/dslzbcaxd/image/upload/v1684329839/IMG_20230517_092152_mmlfxl.jpg)
 
 ## 6. Test de usabilidad
 
