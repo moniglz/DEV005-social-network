@@ -8,6 +8,7 @@
 }
 
 /* Fuentes */
+
 :root {
   --font-logo: 'Satisfy', cursive;
 }
@@ -32,6 +33,7 @@ textarea {
 }
 
 /* MOBILE FIRST */
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
 
   /*------ HOME/LOGIN ------*/
@@ -41,7 +43,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     align-items: center;
-    background-image: url('images/74A43094-23A5-403C-B736-5B587E12F994.png');
+    background-image: url('/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png');
     background-repeat: no-repeat;
     background-size: auto 73%;
     background-position: center 110%;
@@ -120,7 +122,7 @@ textarea {
     border: solid 1px #ffc1c1;
     background-color: #ffffff;
     color: #000000;
-    background-image: url('./images/icon-google.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANXSURBVHgBxVdNaBNBFP5mk6YVqqwgUvHg9iDYgzRRehO69eTPJfXmqUXx3Bx6b3KoFAo2PXk0OXkzqSB4Mol46K0REUSwWRG1QtGt2qb52R3fJBtNyO5mkyb4wcLuzJv5vnkz7+08Bo/gKmQYCMPENBiC9CjULFvdOjg0asuTTQ4BpFmW2jyAdTIgYgVVRMhyronQCxKoIMY2SVgvAqwVL9FrBEcBR5S9QgzdCKit2kSGBivoDzTyxoydN6Q28ntDwT6TCyh0LubtOlo8MICVN1iS7KW9AH/Ll3fyHNnla6deQIxhUOltuhvyFgH8prSGn6YCZ+g02TptWtwpxCwPzpOgJS/kdRMxMDOi4EGpAJ072TkeIhchESLvGEGWgEACexTnTypAgR+JvFswnpFlSMUff1teVOkx/llUMD4ocgEKw/1wS8tVOhZ3hyjnMeGf2CDJBYiNqW2t41JdxEo50WmCscUtFT3AYNArFWh+SGzS1uIky3lZPZN8GfQAEX7+AMvTUrlia2HyLAYNzhUSwBz+cFzDoMEgS/jPEFvgcHGQghg0OHSxBZptpw+TGDQYoygw+WuKhLbVPi0qqpqakLOzaderFZfYjFs/DK4whkf2/DxP0SBOO5trNO5zPx4Xz2PjUMGoWcvlUbf5d1YuZt36xxbfLFG+te0zTeSsVHxQENHwzTyG+78uYds40bDRKTGHns+mNfSAsciWwgK+glM/l4xxcqCuw2TJzfJpLOxdaSYXkH1A5loqrKAncskxSdG2JHZWQlotDBOHE/Hl35dr7m8zpOtUtyKCD9cscuY4xmRGzJq/jvmN6/Fdc3gB7ojSliSdtkRNheVRQMwR0b9fkLUPt2BUR9oNOV//ujoZaREQpsH0E97i8HQly9KFI2fC+ldQoSKxWtiqzUalkoz3b++gXGpJtlqxbIT0eEivD20CiVBIRMajCE8QIrbf3cbBwRlBppuSERJ73+hvqwuWn00FN8tnU/0UIfBJu6Htfpma/bwayje32xYm/fbEcVbWijwwk7Y5O661oceD6YpTUmldN4ejaYeM2rE4Fd6oUn1nFaeeIPaacyT9DPF0hyTWUUCTEBElYZpYpc8gJZJz3KqWLcKP9Jo3ObIBCel0h39IA38AiphSAlItOqkAAAAASUVORK5CYII=');
     background-repeat: no-repeat;
     background-position-x: 10px;
     background-position-y: center;
@@ -137,7 +139,7 @@ textarea {
     border: solid 1px #ffc1c1;
     background-color: #ffffff;
     color: #000000;
-    background-image: url('./images/icon-github.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHiSURBVHgBxVaLdcIwDDw6QTaoOgGMkG6QETICnSAegQ2gE5QNkg2gE5BOEDagFnFejYkcJzH03ruXjy37LNmyFghHornSzDSXmmTYoTb81txrVogMFlBoNpqXETxpbh2xkzFFQB8LTARpHiIIcD1EGAEyRpcHkMdd/beIjk2ImJNgOHfiBiPCVPQMsjdtvILdSAEV2qPOpy7taS/tyRfmSUaliw/NjfVN5rvWPJqnjZWZtHLsYCZ38Q4n3+zQv6oc8VBjwCuMkyBkjXiQQphy4wvaOJJgTIgD3ynJuheOpXTmE8TD2jPPFSUevz86SKkg4dC8CUZHxMen8J9YyKvQeEZ8nH1CnglpzyU+IUGX00iQ8L9mIT94npClr5Hvk76dXCIuMshJ7Roy5elQIA4IcvY+dJ1S+G/RuWJS+Gucrd3ZTjQK7f74wm32Y4PcDCzufrSrz8wCSgyXC6k9gMK9F1iMlP4JMkImtxd4t5KmRynTLaIr+JGOEJL3DeBeSiX+qiuFNlRbWLelAMJEb9hw3VqY/13lRRi+kSlARIOBEiPB/Q5nT7C32BM5hhMdBQgJKrgI/uOmAuwvM+yDxagAWykck0vPTSQhfPJm312E2ypfBfSP4gXfBAphBXUOJ2MO4Rch3p2kvTN1NgAAAABJRU5ErkJggg==');
     background-repeat: no-repeat;
     background-position-x: 10px;
     background-position-y: center;
@@ -206,7 +208,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     align-items: center;
-    background-image: url('images/74A43094-23A5-403C-B736-5B587E12F994.png');
+    background-image: url('/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png');
     background-repeat: no-repeat;
     background-size: auto 73%;
     background-position: center 117%;
@@ -258,7 +260,7 @@ textarea {
     border: solid 1px #ffc1c1;
     background-color: #ffffff;
     color: #000000;
-    background-image: url('./images/icon-google.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANXSURBVHgBxVdNaBNBFP5mk6YVqqwgUvHg9iDYgzRRehO69eTPJfXmqUXx3Bx6b3KoFAo2PXk0OXkzqSB4Mol46K0REUSwWRG1QtGt2qb52R3fJBtNyO5mkyb4wcLuzJv5vnkz7+08Bo/gKmQYCMPENBiC9CjULFvdOjg0asuTTQ4BpFmW2jyAdTIgYgVVRMhyronQCxKoIMY2SVgvAqwVL9FrBEcBR5S9QgzdCKit2kSGBivoDzTyxoydN6Q28ntDwT6TCyh0LubtOlo8MICVN1iS7KW9AH/Ll3fyHNnla6deQIxhUOltuhvyFgH8prSGn6YCZ+g02TptWtwpxCwPzpOgJS/kdRMxMDOi4EGpAJ072TkeIhchESLvGEGWgEACexTnTypAgR+JvFswnpFlSMUff1teVOkx/llUMD4ocgEKw/1wS8tVOhZ3hyjnMeGf2CDJBYiNqW2t41JdxEo50WmCscUtFT3AYNArFWh+SGzS1uIky3lZPZN8GfQAEX7+AMvTUrlia2HyLAYNzhUSwBz+cFzDoMEgS/jPEFvgcHGQghg0OHSxBZptpw+TGDQYoygw+WuKhLbVPi0qqpqakLOzaderFZfYjFs/DK4whkf2/DxP0SBOO5trNO5zPx4Xz2PjUMGoWcvlUbf5d1YuZt36xxbfLFG+te0zTeSsVHxQENHwzTyG+78uYds40bDRKTGHns+mNfSAsciWwgK+glM/l4xxcqCuw2TJzfJpLOxdaSYXkH1A5loqrKAncskxSdG2JHZWQlotDBOHE/Hl35dr7m8zpOtUtyKCD9cscuY4xmRGzJq/jvmN6/Fdc3gB7ojSliSdtkRNheVRQMwR0b9fkLUPt2BUR9oNOV//ujoZaREQpsH0E97i8HQly9KFI2fC+ldQoSKxWtiqzUalkoz3b++gXGpJtlqxbIT0eEivD20CiVBIRMajCE8QIrbf3cbBwRlBppuSERJ73+hvqwuWn00FN8tnU/0UIfBJu6Htfpma/bwayje32xYm/fbEcVbWijwwk7Y5O661oceD6YpTUmldN4ejaYeM2rE4Fd6oUn1nFaeeIPaacyT9DPF0hyTWUUCTEBElYZpYpc8gJZJz3KqWLcKP9Jo3ObIBCel0h39IA38AiphSAlItOqkAAAAASUVORK5CYII=');
     background-size: 30px;
     background-repeat: no-repeat;
     background-position-x: 15px;
@@ -276,7 +278,7 @@ textarea {
     border: solid 1px #ffc1c1;
     background-color: #ffffff;
     color: #000000;
-    background-image: url('./images/icon-github.png');
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHiSURBVHgBxVaLdcIwDDw6QTaoOgGMkG6QETICnSAegQ2gE5QNkg2gE5BOEDagFnFejYkcJzH03ruXjy37LNmyFghHornSzDSXmmTYoTb81txrVogMFlBoNpqXETxpbh2xkzFFQB8LTARpHiIIcD1EGAEyRpcHkMdd/beIjk2ImJNgOHfiBiPCVPQMsjdtvILdSAEV2qPOpy7taS/tyRfmSUaliw/NjfVN5rvWPJqnjZWZtHLsYCZ38Q4n3+zQv6oc8VBjwCuMkyBkjXiQQphy4wvaOJJgTIgD3ynJuheOpXTmE8TD2jPPFSUevz86SKkg4dC8CUZHxMen8J9YyKvQeEZ8nH1CnglpzyU+IUGX00iQ8L9mIT94npClr5Hvk76dXCIuMshJ7Roy5elQIA4IcvY+dJ1S+G/RuWJS+Gucrd3ZTjQK7f74wm32Y4PcDCzufrSrz8wCSgyXC6k9gMK9F1iMlP4JMkImtxd4t5KmRynTLaIr+JGOEJL3DeBeSiX+qiuFNlRbWLelAMJEb9hw3VqY/13lRRi+kSlARIOBEiPB/Q5nT7C32BM5hhMdBQgJKrgI/uOmAuwvM+yDxagAWykck0vPTSQhfPJm312E2ypfBfSP4gXfBAphBXUOJ2MO4Rch3p2kvTN1NgAAAABJRU5ErkJggg==');
     background-size: 32px;
     background-repeat: no-repeat;
     background-position-x: 15px;
@@ -323,7 +325,7 @@ textarea {
     height: 100%;
     width: 100%;
     align-items: center;
-    background-image: url('./images/huellitas-claras.png');
+    background-image: url('/assets/huellitas-claras.e0772353.png');
     background-repeat: repeat-y;
   }
 
@@ -415,7 +417,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./images/top-svgrepo-com.svg');
+    background-image: url('/assets/top-svgrepo-com.e5287d75.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -483,6 +485,7 @@ textarea {
     width: 12rem;
     overflow: hidden;
     font-family: var(--font-text);
+    color: white;
     font-size: 1.7rem;
     font-weight: bold;
     background-color: #d35c46;
@@ -492,7 +495,10 @@ textarea {
     justify-content: center;
     align-items: center;
     color: #d35c46;
-    background-image: url('./images/heart-svgrepo-com.svg');
+    background-color: #d35c46;
+    border: 1px solid white;
+    border-radius: 0 0 12px 12px;
+    background-image: url('/assets/heart-svgrepo-com.da7baec8.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 35px;    
@@ -511,6 +517,7 @@ textarea {
     border: none;
     border-radius: 0px 0px 13px 13px;
     background-color: #d35c46;
+    border: 1px solid white;
   }
 
   .modal {
@@ -561,7 +568,8 @@ textarea {
   }
 }
 
-  /* TABLET */
+/* TABLET */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*------ HOME/LOGIN ------*/
   .container {
@@ -570,7 +578,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     align-items: center;
-    background-image: url('images/74A43094-23A5-403C-B736-5B587E12F994.png');
+    background-image: url('/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png');
     background-repeat: no-repeat;
     background-size: 70.5%;
     background-position: right 150%;
@@ -643,27 +651,10 @@ textarea {
     #login {
       font-size: 2.35em;
     }
-    #gh-login {
-      font-size: 1.95em;
+    .provider {
+      display: flex;
       flex-direction: row-reverse;
       padding: 2.5%;
-      padding-left: 10%;
-      font-weight: 400;
-      line-height: 1.15em;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #ffc1c1;
-      background-color: #ffffff;
-      color: #000000;
-      background-image: url('./images/icon-github.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
-    }
-    #google-login {
-      flex-direction: row-reverse;
-      padding: 2.5%;
-      padding-left: 10%;
       font-size: 1.95em;
       font-weight: 400;
       line-height: 1.15em;
@@ -672,12 +663,12 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-google.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
     }
-
+    .provider img {
+      height: 3.2rem;
+      width: 3.2rem;
+      margin: 0 2rem;
+    }
   #to-regist {
     display: grid;
     grid-template-rows: auto 100%;
@@ -784,24 +775,6 @@ textarea {
     font-weight: 600px;
   }
 
-  #google-reg {
-    font-size: 1.95em;
-    flex-direction: row-reverse;
-    padding: 2.5%;
-    padding-left: 10%;
-    font-weight: 400;
-    line-height: 1.15em;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px #ffc1c1;
-    background-color: #ffffff;
-    color: #000000;
-    background-image: url('./images/icon-google.png');
-    background-repeat: no-repeat;
-    background-position-x: 25px;
-    background-position-y: center;
-  }
-  
   .signup-container #google-reg,#github-reg {
     font-family: var(--font-text);
     font-size: 19px;
@@ -817,7 +790,7 @@ textarea {
   }
 
   .register-background {
-    background-image: url("images/74A43094-23A5-403C-B736-5B587E12F994.png");
+    background-image: url("/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png");
     height: 100vh;
     width: 100vw;
     background-size: 70%;
@@ -828,23 +801,48 @@ textarea {
     align-items: center;
     flex-direction: column;
   }
+  #google-reg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 3em;
+    width: 33rem;
+    padding: 0.4rem;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.8rem;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+  }
 
-    #github-reg {
-      font-size: 1.95em;
-      flex-direction: row-reverse;
-      padding: 2.5%;
-      padding-left: 10%;
-      font-weight: 400;
-      line-height: 1.15em;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #ffc1c1;
-      background-color: #ffffff;
-      color: #000000;
-      background-image: url('./images/icon-github.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
+    #google-reg img {
+      height: 1.85em;
+      width: 1.85em;
+      margin-right: 2rem;
+    }
+
+  #github-reg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 3em;
+    width: 33rem;
+    padding: 0.4rem;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.8rem;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+    #github-reg img {
+      height: 1.85em;
+      width: 1.85em;
+      margin-right: 2rem;
     }
 
   #return{
@@ -876,7 +874,7 @@ textarea {
       height: 100vh;
       width: 100vw;
       align-items: center;
-      background-image: url('./images/huellitas-claras.png');
+      background-image: url('/assets/huellitas-claras.e0772353.png');
     background-repeat: repeat;
     position: absolute;
     }
@@ -968,6 +966,7 @@ textarea {
       height: auto;
       width: 44rem;
       margin: 3em 0 3.5em;
+      height: auto;
     }
     .posted {
       display: flex;
@@ -1026,17 +1025,13 @@ textarea {
       font-family: var(--font-text);
       font-size: 1.8rem;
       font-weight: 500;
-      color: #d35c46;
+      color: #ffffff;
       background-color: #d35c46;
       border: none;
       border-radius: 0 0 1.5rem 1.5rem;
       text-align: center;
       align-items: center;
       justify-content: center;
-      background-image: url('./images/heart-svgrepo-com.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 30%;
     }
 
   .modal {
@@ -1093,9 +1088,6 @@ textarea {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('./images/top-svgrepo-com.svg');
-    background-repeat: no-repeat;
-    background-position: center;
     }
 
 
@@ -1110,9 +1102,9 @@ textarea {
   }
 }
 
+/* DESKTOP and LAPTOPS */
 
-  /* DESKTOP and LAPTOPS */
-  @media only screen and (min-width: 1024px) and (max-width: 1728px) {
+@media only screen and (min-width: 1024px) and (max-width: 1728px) {
 
     /*------ HOME/LOGIN ------*/
     #container-home {
@@ -1123,7 +1115,7 @@ textarea {
       grid-template-rows: 30% 70%;
       grid-auto-flow: column;
       gap: 20px;
-      background-image: url(/images/74A43094-23A5-403C-B736-5B587E12F994.png);
+      background-image: url(/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png);
       background-repeat: no-repeat;
       background-size: auto 94%;
       background-position: 13% 7em;
@@ -1226,7 +1218,7 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-google.png');
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANXSURBVHgBxVdNaBNBFP5mk6YVqqwgUvHg9iDYgzRRehO69eTPJfXmqUXx3Bx6b3KoFAo2PXk0OXkzqSB4Mol46K0REUSwWRG1QtGt2qb52R3fJBtNyO5mkyb4wcLuzJv5vnkz7+08Bo/gKmQYCMPENBiC9CjULFvdOjg0asuTTQ4BpFmW2jyAdTIgYgVVRMhyronQCxKoIMY2SVgvAqwVL9FrBEcBR5S9QgzdCKit2kSGBivoDzTyxoydN6Q28ntDwT6TCyh0LubtOlo8MICVN1iS7KW9AH/Ll3fyHNnla6deQIxhUOltuhvyFgH8prSGn6YCZ+g02TptWtwpxCwPzpOgJS/kdRMxMDOi4EGpAJ072TkeIhchESLvGEGWgEACexTnTypAgR+JvFswnpFlSMUff1teVOkx/llUMD4ocgEKw/1wS8tVOhZ3hyjnMeGf2CDJBYiNqW2t41JdxEo50WmCscUtFT3AYNArFWh+SGzS1uIky3lZPZN8GfQAEX7+AMvTUrlia2HyLAYNzhUSwBz+cFzDoMEgS/jPEFvgcHGQghg0OHSxBZptpw+TGDQYoygw+WuKhLbVPi0qqpqakLOzaderFZfYjFs/DK4whkf2/DxP0SBOO5trNO5zPx4Xz2PjUMGoWcvlUbf5d1YuZt36xxbfLFG+te0zTeSsVHxQENHwzTyG+78uYds40bDRKTGHns+mNfSAsciWwgK+glM/l4xxcqCuw2TJzfJpLOxdaSYXkH1A5loqrKAncskxSdG2JHZWQlotDBOHE/Hl35dr7m8zpOtUtyKCD9cscuY4xmRGzJq/jvmN6/Fdc3gB7ojSliSdtkRNheVRQMwR0b9fkLUPt2BUR9oNOV//ujoZaREQpsH0E97i8HQly9KFI2fC+ldQoSKxWtiqzUalkoz3b++gXGpJtlqxbIT0eEivD20CiVBIRMajCE8QIrbf3cbBwRlBppuSERJ73+hvqwuWn00FN8tnU/0UIfBJu6Htfpma/bwayje32xYm/fbEcVbWijwwk7Y5O661oceD6YpTUmldN4ejaYeM2rE4Fd6oUn1nFaeeIPaacyT9DPF0hyTWUUCTEBElYZpYpc8gJZJz3KqWLcKP9Jo3ObIBCel0h39IA38AiphSAlItOqkAAAAASUVORK5CYII=');
       background-repeat: no-repeat;
       background-position-x: 10px;
       background-position-y: center;
@@ -1243,7 +1235,7 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-github.png');
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHiSURBVHgBxVaLdcIwDDw6QTaoOgGMkG6QETICnSAegQ2gE5QNkg2gE5BOEDagFnFejYkcJzH03ruXjy37LNmyFghHornSzDSXmmTYoTb81txrVogMFlBoNpqXETxpbh2xkzFFQB8LTARpHiIIcD1EGAEyRpcHkMdd/beIjk2ImJNgOHfiBiPCVPQMsjdtvILdSAEV2qPOpy7taS/tyRfmSUaliw/NjfVN5rvWPJqnjZWZtHLsYCZ38Q4n3+zQv6oc8VBjwCuMkyBkjXiQQphy4wvaOJJgTIgD3ynJuheOpXTmE8TD2jPPFSUevz86SKkg4dC8CUZHxMen8J9YyKvQeEZ8nH1CnglpzyU+IUGX00iQ8L9mIT94npClr5Hvk76dXCIuMshJ7Roy5elQIA4IcvY+dJ1S+G/RuWJS+Gucrd3ZTjQK7f74wm32Y4PcDCzufrSrz8wCSgyXC6k9gMK9F1iMlP4JMkImtxd4t5KmRynTLaIr+JGOEJL3DeBeSiX+qiuFNlRbWLelAMJEb9hw3VqY/13lRRi+kSlARIOBEiPB/Q5nT7C32BM5hhMdBQgJKrgI/uOmAuwvM+yDxagAWykck0vPTSQhfPJm312E2ypfBfSP4gXfBAphBXUOJ2MO4Rch3p2kvTN1NgAAAABJRU5ErkJggg==');
       background-repeat: no-repeat;
       background-position-x: 10px;
       background-position-y: center;
@@ -1304,7 +1296,7 @@ textarea {
     grid-template-rows: 30% 70%;
     grid-auto-flow: column;
     gap: 20px;
-    background-image: url(/images/74A43094-23A5-403C-B736-5B587E12F994.png);
+    background-image: url(/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png);
     background-repeat: no-repeat;
     background-size: auto 94%;
     background-position: 13% 7em;
@@ -1391,7 +1383,7 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-google.png');
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANXSURBVHgBxVdNaBNBFP5mk6YVqqwgUvHg9iDYgzRRehO69eTPJfXmqUXx3Bx6b3KoFAo2PXk0OXkzqSB4Mol46K0REUSwWRG1QtGt2qb52R3fJBtNyO5mkyb4wcLuzJv5vnkz7+08Bo/gKmQYCMPENBiC9CjULFvdOjg0asuTTQ4BpFmW2jyAdTIgYgVVRMhyronQCxKoIMY2SVgvAqwVL9FrBEcBR5S9QgzdCKit2kSGBivoDzTyxoydN6Q28ntDwT6TCyh0LubtOlo8MICVN1iS7KW9AH/Ll3fyHNnla6deQIxhUOltuhvyFgH8prSGn6YCZ+g02TptWtwpxCwPzpOgJS/kdRMxMDOi4EGpAJ072TkeIhchESLvGEGWgEACexTnTypAgR+JvFswnpFlSMUff1teVOkx/llUMD4ocgEKw/1wS8tVOhZ3hyjnMeGf2CDJBYiNqW2t41JdxEo50WmCscUtFT3AYNArFWh+SGzS1uIky3lZPZN8GfQAEX7+AMvTUrlia2HyLAYNzhUSwBz+cFzDoMEgS/jPEFvgcHGQghg0OHSxBZptpw+TGDQYoygw+WuKhLbVPi0qqpqakLOzaderFZfYjFs/DK4whkf2/DxP0SBOO5trNO5zPx4Xz2PjUMGoWcvlUbf5d1YuZt36xxbfLFG+te0zTeSsVHxQENHwzTyG+78uYds40bDRKTGHns+mNfSAsciWwgK+glM/l4xxcqCuw2TJzfJpLOxdaSYXkH1A5loqrKAncskxSdG2JHZWQlotDBOHE/Hl35dr7m8zpOtUtyKCD9cscuY4xmRGzJq/jvmN6/Fdc3gB7ojSliSdtkRNheVRQMwR0b9fkLUPt2BUR9oNOV//ujoZaREQpsH0E97i8HQly9KFI2fC+ldQoSKxWtiqzUalkoz3b++gXGpJtlqxbIT0eEivD20CiVBIRMajCE8QIrbf3cbBwRlBppuSERJ73+hvqwuWn00FN8tnU/0UIfBJu6Htfpma/bwayje32xYm/fbEcVbWijwwk7Y5O661oceD6YpTUmldN4ejaYeM2rE4Fd6oUn1nFaeeIPaacyT9DPF0hyTWUUCTEBElYZpYpc8gJZJz3KqWLcKP9Jo3ObIBCel0h39IA38AiphSAlItOqkAAAAASUVORK5CYII=');
       background-repeat: no-repeat;
       background-position-x: 15px;
       background-position-y: center;
@@ -1410,7 +1402,7 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-github.png');
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAhCAYAAAC803lsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHiSURBVHgBxVaLdcIwDDw6QTaoOgGMkG6QETICnSAegQ2gE5QNkg2gE5BOEDagFnFejYkcJzH03ruXjy37LNmyFghHornSzDSXmmTYoTb81txrVogMFlBoNpqXETxpbh2xkzFFQB8LTARpHiIIcD1EGAEyRpcHkMdd/beIjk2ImJNgOHfiBiPCVPQMsjdtvILdSAEV2qPOpy7taS/tyRfmSUaliw/NjfVN5rvWPJqnjZWZtHLsYCZ38Q4n3+zQv6oc8VBjwCuMkyBkjXiQQphy4wvaOJJgTIgD3ynJuheOpXTmE8TD2jPPFSUevz86SKkg4dC8CUZHxMen8J9YyKvQeEZ8nH1CnglpzyU+IUGX00iQ8L9mIT94npClr5Hvk76dXCIuMshJ7Roy5elQIA4IcvY+dJ1S+G/RuWJS+Gucrd3ZTjQK7f74wm32Y4PcDCzufrSrz8wCSgyXC6k9gMK9F1iMlP4JMkImtxd4t5KmRynTLaIr+JGOEJL3DeBeSiX+qiuFNlRbWLelAMJEb9hw3VqY/13lRRi+kSlARIOBEiPB/Q5nT7C32BM5hhMdBQgJKrgI/uOmAuwvM+yDxagAWykck0vPTSQhfPJm312E2ypfBfSP4gXfBAphBXUOJ2MO4Rch3p2kvTN1NgAAAABJRU5ErkJggg==');
       background-repeat: no-repeat;
       background-position-x: 15px;
       background-position-y: center;
@@ -1466,7 +1458,7 @@ textarea {
   display: flex;
   height: 100%;
   width: 100vw;
-  background-image: url(./images/huellitas-claras.png);
+  background-image: url(/assets/huellitas-claras.e0772353.png);
   background-size: 50%;
   background-repeat: repeat-y;
   background-position: right 150%;
@@ -1600,9 +1592,8 @@ textarea {
       background-color: #fefefe;
       margin: 15% auto;
       padding: 20px;
-      border: #8C7851 solid 2px;
-      border-radius: 20px;
-      width: 30%;
+      border: 1px solid #888;
+      width: 50%;
       font-family: var(--font-text);
       font-size: medium;
       display: flex;
@@ -1630,7 +1621,7 @@ textarea {
       background-color: #d35c46;
       border: 1px solid white;
       border-radius: 0 0 12px 12px;
-      background-image: url('./images/heart-svgrepo-com.svg');
+      background-image: url('/assets/heart-svgrepo-com.da7baec8.svg');
       background-repeat: no-repeat;
       background-position: center;
       background-size: 30px;
@@ -1680,7 +1671,7 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./images/top-svgrepo-com.svg');
+    background-image: url('/assets/top-svgrepo-com.e5287d75.svg');
     background-repeat: no-repeat;
     background-position: center;
   }
@@ -1690,13 +1681,5 @@ textarea {
     font-size: 1.5rem;
     margin-bottom: 4px;
     border-radius: 0 0 12px 12px;
-  }
-  #confirm-delete {
-    font-size: 1.5rem;
-    background-color: #8C7851;
-    margin-bottom: 4px;
-  }
-  #cancel-delete {
-    background-color: #8C7851;
   }
 }
