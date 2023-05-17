@@ -8,6 +8,7 @@
 }
 
 /* Fuentes */
+
 :root {
   --font-logo: 'Satisfy', cursive;
 }
@@ -32,8 +33,8 @@ textarea {
 }
 
 /* MOBILE FIRST */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   /*------ HOME/LOGIN ------*/
   .container {
     display: flex;
@@ -41,7 +42,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     align-items: center;
-    background-image: url('images/74A43094-23A5-403C-B736-5B587E12F994.png');
+    background-image: url('/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png');
     background-repeat: no-repeat;
     background-size: auto 73%;
     background-position: center 110%;
@@ -109,10 +110,10 @@ textarea {
     font-size: 1.6rem;
   }
 
-  #google-login {
+  .provider {
     display: flex;
     flex-direction: row-reverse;
-    padding: 2.5% 2.5% 2.5% 18%;
+    padding: 2.5%;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.1em;
@@ -120,27 +121,12 @@ textarea {
     border: solid 1px #ffc1c1;
     background-color: #ffffff;
     color: #000000;
-    background-image: url('./images/icon-google.png');
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: center;
   }
 
-  #gh-login {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 2.5% 2.5% 2.5% 18%;
-    font-size: 1.4em;
-    font-weight: 400;
-    line-height: 1.1em;
-    align-items: center;
-    border: solid 1px #ffc1c1;
-    background-color: #ffffff;
-    color: #000000;
-    background-image: url('./images/icon-github.png');
-    background-repeat: no-repeat;
-    background-position-x: 10px;
-    background-position-y: center;
+  .provider img {
+    height: 82%;
+    width: 15%;
+    margin: 0 0.5rem;
   }
 
   #error-login {
@@ -206,7 +192,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     align-items: center;
-    background-image: url('images/74A43094-23A5-403C-B736-5B587E12F994.png');
+    background-image: url('/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png');
     background-repeat: no-repeat;
     background-size: auto 73%;
     background-position: center 117%;
@@ -250,25 +236,7 @@ textarea {
   #google-reg {
     display: flex;
     flex-direction: row-reverse;
-    padding: 2.5% 2.5% 2.5% 17%;
-    font-size: 1.5em;
-    font-weight: 500;
-    line-height: 1.1em;
-    align-items: center;
-    border: solid 1px #ffc1c1;
-    background-color: #ffffff;
-    color: #000000;
-    background-image: url('./images/icon-google.png');
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position-x: 15px;
-    background-position-y: center;
-  }
-
-  #github-reg {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 2.5% 2.5% 2.5% 17%;
+    padding: 2.5%;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.1em;
@@ -276,11 +244,34 @@ textarea {
     border: solid 1px #ffc1c1;
     background-color: #ffffff;
     color: #000000;
-    background-image: url('./images/icon-github.png');
-    background-size: 32px;
-    background-repeat: no-repeat;
-    background-position-x: 15px;
-    background-position-y: center;
+  }
+
+  #google-reg img {
+    height: 1.85em;
+    width: 1.85em;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  #github-reg {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2.5%;
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.1em;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+
+  }
+
+  #github-reg img {
+    height: 1.85em;
+    width: 1.85em;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   #container {
@@ -323,7 +314,7 @@ textarea {
     height: 100%;
     width: 100%;
     align-items: center;
-    background-image: url('./images/huellitas-claras.png');
+    background-image: url('/assets/huellitas-claras.e0772353.png');
     background-repeat: repeat-y;
   }
 
@@ -407,17 +398,14 @@ textarea {
 
   #back-to-top {
     position: fixed;
-    bottom: 15px;
-    right: 255px;
+    bottom: 20px;
+    right: 20px;
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./images/top-svgrepo-com.svg');
-    background-repeat: no-repeat;
-    background-position: center;
   }
   
   .cont-posted {
@@ -448,6 +436,11 @@ textarea {
     background-color: #f9f4ef;
     width: fit-content;
     border-radius: 0.7rem;
+  }
+
+  .likes-counter {
+    background-image: url('/assets/heart-svgrepo-com.da7baec8.svg');
+    background-size: contain;
   }
 
   #btns-cont {
@@ -484,22 +477,13 @@ textarea {
     overflow: hidden;
     font-family: var(--font-text);
     color: white;
-    font-size: 1.7rem;
-    font-weight: bold;
+    font-size: 2.2rem;
     background-color: #d35c46;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 0px 0px 0px 13px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #d35c46;
-    background-color: #d35c46;
-    border: 1px solid white;
-    border-radius: 0 0 12px 12px;
-    background-image: url('./images/heart-svgrepo-com.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 35px;    
   }
 
   .posted-btns {
@@ -513,9 +497,9 @@ textarea {
     overflow: hidden;
     font-size: 2.2rem;
     border: none;
-    border-radius: 0px 0px 13px 13px;
+    border-radius: 0px 0px 13px 0px;
     background-color: #d35c46;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
   .modal {
@@ -566,7 +550,8 @@ textarea {
   }
 }
 
-  /* TABLET */
+/* TABLET */
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /*------ HOME/LOGIN ------*/
   .container {
@@ -575,7 +560,7 @@ textarea {
     height: 100vh;
     width: 100vw;
     align-items: center;
-    background-image: url('images/74A43094-23A5-403C-B736-5B587E12F994.png');
+    background-image: url('/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png');
     background-repeat: no-repeat;
     background-size: 70.5%;
     background-position: right 150%;
@@ -648,11 +633,10 @@ textarea {
     #login {
       font-size: 2.35em;
     }
-    #gh-login {
-      font-size: 1.95em;
+    .provider {
+      display: flex;
       flex-direction: row-reverse;
       padding: 2.5%;
-      padding-left: 10%;
       font-size: 1.95em;
       font-weight: 400;
       line-height: 1.15em;
@@ -661,30 +645,12 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-github.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
     }
-    #google-login {
-      font-size: 1.95em;
-      flex-direction: row-reverse;
-      padding: 2.5%;
-      padding-left: 10%;
-      font-size: 1.95em;
-      font-weight: 400;
-      line-height: 1.15em;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #ffc1c1;
-      background-color: #ffffff;
-      color: #000000;
-      background-image: url('./images/icon-google.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
+    .provider img {
+      height: 3.2rem;
+      width: 3.2rem;
+      margin: 0 2rem;
     }
-
   #to-regist {
     display: grid;
     grid-template-rows: auto 100%;
@@ -806,7 +772,7 @@ textarea {
   }
 
   .register-background {
-    background-image: url("images/74A43094-23A5-403C-B736-5B587E12F994.png");
+    background-image: url("/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png");
     height: 100vh;
     width: 100vw;
     background-size: 70%;
@@ -817,44 +783,49 @@ textarea {
     align-items: center;
     flex-direction: column;
   }
+  #google-reg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 3em;
+    width: 33rem;
+    padding: 0.4rem;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.8rem;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+  }
 
-    #github-reg {
-      font-size: 1.95em;
-      flex-direction: row-reverse;
-      padding: 2.5%;
-      padding-left: 10%;
-      font-size: 1.95em;
-      font-weight: 400;
-      line-height: 1.15em;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #ffc1c1;
-      background-color: #ffffff;
-      color: #000000;
-      background-image: url('./images/icon-github.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
+    #google-reg img {
+      height: 1.85em;
+      width: 1.85em;
+      margin-right: 2rem;
     }
-    #google-reg {
-      font-size: 1.95em;
-      flex-direction: row-reverse;
-      padding: 2.5%;
-      padding-left: 10%;
-      font-size: 1.95em;
-      font-weight: 400;
-      line-height: 1.15em;
-      justify-content: center;
-      align-items: center;
-      border: solid 1px #ffc1c1;
-      background-color: #ffffff;
-      color: #000000;
-      background-image: url('./images/icon-google.png');
-      background-repeat: no-repeat;
-      background-position-x: 25px;
-      background-position-y: center;
+
+  #github-reg {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 3em;
+    width: 33rem;
+    padding: 0.4rem;
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.8rem;
+    align-items: center;
+    border: solid 1px #ffc1c1;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+    #github-reg img {
+      height: 1.85em;
+      width: 1.85em;
+      margin-right: 2rem;
     }
-    
 
   #return{
     margin-top: 43px;
@@ -884,7 +855,7 @@ textarea {
       height: 100vh;
       width: 100vw;
       align-items: center;
-      background-image: url('./images/huellitas-claras.png');
+      background-image: url('/assets/huellitas-claras.e0772353.png');
     background-repeat: repeat;
     position: absolute;
     }
@@ -1035,17 +1006,13 @@ textarea {
       font-family: var(--font-text);
       font-size: 1.8rem;
       font-weight: 500;
-      color: #d35c46;
+      color: #ffffff;
       background-color: #d35c46;
       border: none;
       border-radius: 0 0 1.5rem 1.5rem;
       text-align: center;
       align-items: center;
       justify-content: center;
-      background-image: url('./images/heart-svgrepo-com.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 30%;
     }
 
   .modal {
@@ -1102,9 +1069,6 @@ textarea {
       display: flex;
       justify-content: center;
       align-items: center;
-      background-image: url('./images/top-svgrepo-com.svg');
-    background-repeat: no-repeat;
-    background-position: center;
     }
 
 
@@ -1119,9 +1083,9 @@ textarea {
   }
 }
 
+/* DESKTOP and LAPTOPS */
 
-  /* DESKTOP and LAPTOPS */
-  @media only screen and (min-width: 1024px) and (max-width: 1728px) {
+@media only screen and (min-width: 1024px) and (max-width: 1728px) {
 
     /*------ HOME/LOGIN ------*/
     #container-home {
@@ -1132,7 +1096,7 @@ textarea {
       grid-template-rows: 30% 70%;
       grid-auto-flow: column;
       gap: 20px;
-      background-image: url(/images/74A43094-23A5-403C-B736-5B587E12F994.png);
+      background-image: url(/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png);
       background-repeat: no-repeat;
       background-size: auto 94%;
       background-position: 13% 7em;
@@ -1224,10 +1188,10 @@ textarea {
       font-size: 1.8em;
     }
 
-    #google-login {
+    .provider {
       display: flex;
       flex-direction: row-reverse;
-      padding: 0.4rem 0.4rem 0.4rem 3rem;
+      padding: 0.4rem;
       font-size: 1.5em;
       font-weight: 400;
       line-height: 1.7rem;
@@ -1235,27 +1199,13 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-google.png');
-      background-repeat: no-repeat;
-      background-position-x: 10px;
-      background-position-y: center;
     }
 
-    #gh-login {
-      display: flex;
-      flex-direction: row-reverse;
-      padding: 0.4rem 0.4rem 0.4rem 3rem;
-      font-size: 1.5em;
-      font-weight: 400;
-      line-height: 1.7rem;
-      align-items: center;
-      border: solid 1px #ffc1c1;
-      background-color: #ffffff;
-      color: #000000;
-      background-image: url('./images/icon-github.png');
-      background-repeat: no-repeat;
-      background-position-x: 10px;
-      background-position-y: center;
+    .provider-gg img {
+      height: 1.62em;
+      width: 1.62em;
+      margin-right: auto;
+      margin-left: 1.4rem;
     }
 
     #to-regist {
@@ -1313,7 +1263,7 @@ textarea {
     grid-template-rows: 30% 70%;
     grid-auto-flow: column;
     gap: 20px;
-    background-image: url(/images/74A43094-23A5-403C-B736-5B587E12F994.png);
+    background-image: url(/assets/74A43094-23A5-403C-B736-5B587E12F994.f482cc21.png);
     background-repeat: no-repeat;
     background-size: auto 94%;
     background-position: 13% 7em;
@@ -1332,7 +1282,6 @@ textarea {
     text-align: center;
     align-self: baseline;
   }
-
   #info-cont-reg {
     display: flex;
     height: 19rem;
@@ -1345,7 +1294,6 @@ textarea {
     align-items: center;
     position: relative;
   }
-
     #info-text-reg {
       font-family: var(--font-text);
       font-size: 2.45em;
@@ -1380,19 +1328,17 @@ textarea {
     justify-content: center;
     justify-items: center;
   }
-
     .signup-container input {
       height: 2.5em;
       width: 25rem;
       font-size: 1.6rem;
     }
-
     #google-reg {
       display: flex;
       flex-direction: row-reverse;
       height: 2.6em;
       width: 25rem;
-      padding: 0.4rem 1rem 0.4rem 0.4rem;
+      padding: 0.4rem;
       font-size: 1.6em;
       font-weight: 400;
       line-height: 1.8rem;
@@ -1400,18 +1346,19 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-google.png');
-      background-repeat: no-repeat;
-      background-position-x: 15px;
-      background-position-y: center;
     }
-
+      #google-reg img {
+        height: 1.85em;
+        width: 1.85em;
+        margin-right: .8rem;
+        margin-left: 2.8rem;
+      }
     #github-reg {
       display: flex;
       flex-direction: row-reverse;
       height: 2.6em;
       width: 25rem;
-      padding: 0.4rem 1rem 0.4rem 0.4rem;
+      padding: 0.4rem;
       font-size: 1.6em;
       font-weight: 400;
       line-height: 1.8rem;
@@ -1419,11 +1366,13 @@ textarea {
       border: solid 1px #ffc1c1;
       background-color: #ffffff;
       color: #000000;
-      background-image: url('./images/icon-github.png');
-      background-repeat: no-repeat;
-      background-position-x: 15px;
-      background-position-y: center;
     }
+      #github-reg img {
+        height: 1.85em;
+        width: 1.85em;
+        margin-right: .8rem;
+        margin-left: 2.8rem;
+      }
 
   .signup-container #send-info {
     height: 2.6em;
@@ -1469,13 +1418,12 @@ textarea {
   color: #4a4747;
   background-color: #eaddcf;
 }
-
 /*------ WALL ------*/
 #wall-section {
   display: flex;
   height: 100%;
   width: 100vw;
-  background-image: url(./images/huellitas-claras.png);
+  background-image: url(/assets/huellitas-claras.e0772353.png);
   background-size: 50%;
   background-repeat: repeat-y;
   background-position: right 150%;
@@ -1609,9 +1557,8 @@ textarea {
       background-color: #fefefe;
       margin: 15% auto;
       padding: 20px;
-      border: #8C7851 solid 2px;
-      border-radius: 20px;
-      width: 30%;
+      border: 1px solid #888;
+      width: 50%;
       font-family: var(--font-text);
       font-size: medium;
       display: flex;
@@ -1629,20 +1576,19 @@ textarea {
       flex-direction: row-reverse;
       justify-content: center;
       align-items: center;
-      margin-left: 0.75em;
+      margin-left: 1em;
       height: 4rem;
       width: 7rem;
       font-family: var(--font-text);
-      font-weight: bold;
-      font-size: 13px;
-      color: #d35c46;
+      font-weight: 500;
+      color: #ffffff;
       background-color: #d35c46;
       border: 1px solid white;
       border-radius: 0 0 12px 12px;
-      background-image: url('./images/heart-svgrepo-com.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 30px;
+    }
+
+    #heart-icon {
+      margin-right: 0.5em;
     }
 
     #btns-cont {
@@ -1689,9 +1635,6 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('./images/top-svgrepo-com.svg');
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   #btn-like {
@@ -1699,13 +1642,5 @@ textarea {
     font-size: 1.5rem;
     margin-bottom: 4px;
     border-radius: 0 0 12px 12px;
-  }
-  #confirm-delete {
-    font-size: 1.5rem;
-    background-color: #8C7851;
-    margin-bottom: 4px;
-  }
-  #cancel-delete {
-    background-color: #8C7851;
   }
 }
